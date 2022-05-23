@@ -17,12 +17,8 @@ const renderGoodsItem = (title, foto, price,...anyInfo) => {
 const renderGoodsList = list => {
     let goodsList = list.map(item => renderGoodsItem(item.title,item.foto,item.price)).join('');
     document.querySelector('.goods-list').innerHTML = goodsList;
-
 } 
-// const renderGoodsAnyInfo = listAny => {
-//     let goodsAnyInfo = list.map(item => renderGoodsItem(item.anyInfo)).join('');
-//     document.querySelector('goods-item').innerHTML = goodsAnyInfo;
-// }
+
 //При присваивании массива свойству .innerHTML, у него автоматически вызывается метод .toString, который эквивалентен вызову метода .join(',')
 
 
