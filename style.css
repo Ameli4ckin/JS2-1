@@ -41,6 +41,12 @@
     box-shadow: 0 10px 10px 0 #D77206;
 }
 
+.title {
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: #D77206;
+}
+
 .goods-img {
     margin: 10px 0 10px 0;
 }

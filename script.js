@@ -7,7 +7,8 @@ const goods = [
     
 const renderGoodsItem = (title, foto, price,...anyInfo) => {
     return `<div class="goods-item">
-                <h3>${title}</h3>
+                <h3 class = "title">${title}</h3>
+                <h5>${[...anyInfo]}</h5>
                 <img class = "goods-img" src="${foto}"></img> 
                 <p>${price} $</p>
                 <button class="buy-btn">Купить</button>
@@ -15,7 +16,7 @@ const renderGoodsItem = (title, foto, price,...anyInfo) => {
 };
     
 const renderGoodsList = list => {
-    let goodsList = list.map(item => renderGoodsItem(item.title,item.foto,item.price)).join('');
+    let goodsList = list.map(item => renderGoodsItem(item.title,item.foto,item.price, 'Качественные вещи от производителя')).join('');
     document.querySelector('.goods-list').innerHTML = goodsList;
 } 
 
